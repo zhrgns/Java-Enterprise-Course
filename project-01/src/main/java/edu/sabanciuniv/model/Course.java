@@ -21,7 +21,7 @@ public class Course {
     private Instructor courseInstructor;
 
     // each course has one or more student ! students could take zero or more course!
-    @ManyToMany
+    @ManyToMany (mappedBy = "studentCourses")
     private List<Student> studentList = new ArrayList<>();
 
     //constructor
